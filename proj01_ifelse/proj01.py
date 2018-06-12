@@ -30,8 +30,24 @@ else:
     print "Your number is less than 5!"
 Birthmonth = int(raw_input("What month were you born in?"))
 Birthday = int(raw_input("What day were you born on?"))
-if Birthmonth > 6
-    str(Birthmonth - 6)
-    if Birthday >= 11
-        str(Birthday - 11)
+if Birthmonth >= 6:
+    Months = str(Birthmonth - 6)
+    if Birthday >= 12:
+        Day = str(Birthday - 12)
+    if Birthday < 12:
+        Day = str(31 - 12 + Birthday)
+if Birthmonth < 6:
+    Months = str(12 - 6 + Birthmonth)
+    if Birthday >= 12:
+        Day = str(Birthday - 12)
+    if Birthday < 12:
+        Day = str(31 - 12 + Birthday)
+print Name + ", your birthday is in " + str(Months) + " months and " + str(Day) + " days."
 # If you complete extensions, describe your extensions here!
+Age = raw_input("How old are you?")
+if Age < 13:
+    print Name + ", you can watch G and PG rated movies."
+if Age >= 13 and Age <= 17:
+    print Name + ", you can watch G, PG, and PG-13 rated movies."
+if Age >= 18:
+    print Name + ", you can watch any rating of movies"
