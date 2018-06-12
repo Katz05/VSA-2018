@@ -17,7 +17,7 @@
 # Enter a number to sum, or 0 to indicate you are finished: 10
 # Enter a number to sum, or 0 to indicate you are finished: 0
 #The sum of your numbers is: 21
-#Sum = 0
+Sum = 0
 
 Sum_input = int(raw_input("Enter a number to sum, or 0 to indicate that you are finished:"))
 while Sum_input > 0:
