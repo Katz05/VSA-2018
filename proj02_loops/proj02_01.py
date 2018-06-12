@@ -24,10 +24,3 @@ while Sum_input > 0:
     Sum = Sum + int(Sum_input)
     Sum_input = int(raw_input("Enter a number to sum, or 0 to indicate that you are finished:"))
 print "The total of the sum is " + str(Sum) + "."
-
-#Name = raw_input("Hi, i'm John.What's your name?")
-#print "Nice to meet you " + Name + "."
-#Day = raw_input("How's your day going?")
-#Answer = raw_input("Well I was wondering if you could help me with my homework.I'm having some trouble and I thought I should ask someone for help, so yes or no?")
-#if Answer = yes
-    #print "Thanks."
