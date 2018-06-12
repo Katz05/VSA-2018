@@ -44,7 +44,7 @@ if Birthmonth < 6:
         Day = str(31 - 12 + Birthday)
 print Name + ", your birthday is in " + str(Months) + " months and " + str(Day) + " days."
 # If you complete extensions, describe your extensions here!
-Age = raw_input("How old are you?")
+Age = int(raw_input("How old are you?"))
 if Age < 13:
     print Name + ", you can watch G and PG rated movies."
 if Age >= 13 and Age <= 17:
