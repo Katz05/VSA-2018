@@ -12,10 +12,11 @@ import string
 
 WORDLIST_FILENAME = "words.txt"
 
+
 def load_words():
     """
     Returns a list of valid words. Words are strings of lowercase letters.
-    
+
     Depending on the size of the word list, this function may
     take a while to finish.
     """
@@ -29,18 +30,19 @@ def load_words():
     print "  ", len(wordlist), "words loaded."
     return wordlist
 
+
 def choose_word(wordlist):
     """
     wordlist (list): list of words (strings)
-
     Returns a word from wordlist at random
     """
     return random.choice(wordlist)
 
+
 # end of helper code
 # -----------------------------------
 
-# actually load the dictionary of words and point to it with 
+# actually load the dictionary of words and point to it with
 # the wordlist variable so that it can be accessed from anywhere
 # in the program
 wordlist = load_words()
@@ -56,18 +58,16 @@ counter = 10
 exit = 1
 Answer = False
 
-
 for letter in word:
     L.append(letter)
     L2.append("_")
 
 print "Welcome to Hangman! Type 0 to exit."
-print "I am thinking of a word " +str(len(word)) + " letters long."
+print "I am thinking of a word " + str(len(word)) + " letters long."
 print L2
 
-
-
 while counter > 0 and exit == 1:
+    Answer = False
     print "------------------"
     print "Guesses: " + str(counter)
     print "Available letters: " + var
@@ -76,20 +76,17 @@ while counter > 0 and exit == 1:
     for letter in word:
         if user_guess == letter:
             var = var.replace(user_guess, "")
-            #print L2
+            # print L2
             Answer = True
 
         elif user_guess != letter:
             var = var.replace(user_guess, "")
-            #print "YOU'RE WRONG!"
-            #print L2
+            # print "YOU'RE WRONG!"
+            # print L2
 
 
         else:
             counter = counter + 1
-
-
-
 
     if user_guess == "0":
         exit = exit - 1
@@ -106,7 +103,6 @@ while counter > 0 and exit == 1:
                 L2[c2] = nn
             c2 = c2 + 1
     print L2
-
 
 
 
